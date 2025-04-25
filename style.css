@@ -1,0 +1,126 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  background: url(/background.png);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  height: fit-content;
+  font-family: sans-serif;
+  flex-direction: column;
+  width: fit-content;
+  padding: 40px;
+  gap: 40px;
+
+  button {
+    background-color: #4D46A5;
+    padding: 20px;
+    border: none;
+    color: white;
+    font-weight: 600;
+    border-radius: 9999px;
+    width: 100%;
+    cursor: pointer;
+  }
+}
+
+.option {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 40px;
+  border: 1px solid gainsboro;
+  padding: 10px 20px;
+  border-radius: 20px;
+  
+  button {
+    padding: 20px;
+    border-radius: 10px;
+    line-height: 0px;
+    border: none;
+    background-color: white;
+    font-weight: 600;
+    color: black;
+  }
+}
+
+.cost {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  font-size: 24px;
+  height: fit-content;
+}
+
+.description {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  width: 330px;
+  font-weight: 600;
+  font-size: 16px;
+  gap: 20px;
+}
+
+.BSP {
+  font-size: 16px;
+  font-weight: 600;
+  color: gray;
+}
+
+.kepencet {
+  padding: 10px 20px;
+  background: white;
+  border: 1px solid #ddd;
+  transition: all 0.3s ease;
+}
+
+.kepencet.active {
+  background: #4D46A5;
+  color: white;
+}
+
+.facility {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.toast {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: #4D46A5;
+  color: white;
+  padding: 16px 24px;
+  border-radius: 10px;
+  opacity: 0;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  transform: translateY(20px);
+  font-weight: 600;
+  z-index: 999;
+}
+
+.toast.show {
+  opacity: 1;
+  transform: translateY(0);
+}
