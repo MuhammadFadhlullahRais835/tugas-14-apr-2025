@@ -107,10 +107,10 @@ body {
 
 .toast {
   position: fixed;
-  bottom: 30px;
+  top: 30px;
   right: 30px;
-  background-color: #4D46A5;
-  color: white;
+  background-color: white;
+  color: black;
   padding: 16px 24px;
   border-radius: 10px;
   opacity: 0;
@@ -118,6 +118,7 @@ body {
   transform: translateY(20px);
   font-weight: 600;
   z-index: 999;
+  font-family: sans-serif;
 }
 
 .toast.show {
